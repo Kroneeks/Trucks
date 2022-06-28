@@ -1,0 +1,35 @@
+.services-types ul li {
+    position: relative;
+    background-color: #fff;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.services-types ul li:hover {
+    cursor: pointer;
+}
+
+.services-types ul li.ordered:hover {
+    cursor: default;
+}
+
+.services-types ul li img.ordered {
+    cursor: default;
+    opacity: 0.2;
+}
+
+.services-types ul li.ordered::after {
+    content: "Нет в наличии";
+    cursor: default;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+}
+
+.services-types ul li img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
